@@ -1,3 +1,3 @@
-module github.com/theNewDynamic/gohugo-theme-ananke/v2
+module github.com/theNewDynamic/gohugo-theme-ananke
 
-go 1.21
+go 1.14

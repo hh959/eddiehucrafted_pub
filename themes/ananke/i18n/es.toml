@@ -37,13 +37,5 @@ other = "Enviar"
 [taxonomyPageList]
 other = "A continuación encontrará las páginas asociadas a “{{ .Title }}”"
 
-[readingTime]
-one = "Lectura en un minuto"
-other = "Lectura en {{ .Count }} minutos"
-
-[wordCount]
-one = "Una palabra"
-other = "{{ .Count }} palabras"
-
 [pageTitle]
 other = "{{ .Name }} pagina"
