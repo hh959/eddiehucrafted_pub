@@ -1,3 +1,15 @@
 baseURL: "https://blog.eddiehucrafted.com.au/"
 languageCode: "en-us"
 title: "Eddie Hu Crafted"
+theme: "ananke"
+
+params:
+  author: "Eddie"
+  description: "Notes on learning, building, and projects."
+  recent_posts_number: 10
+
+menu:
+  main:
+    - name: "Posts"
+      url: "/posts/"
+      weight: 10

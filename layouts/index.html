@@ -1,9 +1,0 @@
-{{ define "main" }}
-<h2>Home</h2>
-{{ with .Content }}<div>{{ . }}</div>{{ end }}
-<ul>
-  {{ range .Site.RegularPages }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-  {{ end }}
-</ul>
-{{ end }}
