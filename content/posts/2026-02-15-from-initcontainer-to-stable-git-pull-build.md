@@ -6,11 +6,12 @@ draft: false
 tags: ["hugo", "k3s", "ops", "automation"]
 categories: ["engineering-notes"]
 description: "How I moved my blog delivery from fragile runtime init builds to a stable pull-build-serve model."
+cover: "/images/hugo-cms.jpg"
 ---
 
 Today I adjusted the blog runtime strategy to improve stability and reduce deployment friction.
 
-![Day 1 setup snapshot](/static/public/images/k3s-logo.png)
+![Day 1 setup snapshot](/images/k3s-logo.png)
 ## What changed
 
 I moved away from a Kubernetes init-container-heavy runtime build pattern and switched to a simpler model:
