@@ -5,6 +5,9 @@ title: "Eddie Hu Crafted"
 theme: "dream"
 enableRobotsTXT: true
 
+contentDir: "content/public"
+staticDir: ["static/public"]
+
 params:
   lightTheme: "emerald"
   darkTheme: "forest"
