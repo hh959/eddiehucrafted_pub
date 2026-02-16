@@ -1,32 +1,12 @@
 baseURL: "https://blog.eddiehucrafted.com.au/"
 languageCode: "en-us"
-defaultContentLanguage: "en"
 title: "Eddie Hu Crafted"
-theme: "dream"
-enableRobotsTXT: true
+theme: "ananke"
 
 params:
-  lightTheme: "emerald"
-  darkTheme: "forest"
-
   author: "Eddie"
   description: "Notes on learning, building, and projects."
-  avatar: "/images/favicon.png"
-  favicon: "favicon.png"
-  headerTitle: "Eddie Hu Crafted"
-  motto: "Learning, building, and sharing."
-
-  rss: true
-  siteStartYear: 2026
-  stickyNav: true
-  showTableOfContents: true
-  showSummaryCoverInPost: true
-  imageZoomableInPost: true
-  showPrevNextPost: true
-
-  advanced:
-    customCSS:
-      - "css/dream-tidy-cards.css"
+  recent_posts_number: 10
 
 menu:
   main:

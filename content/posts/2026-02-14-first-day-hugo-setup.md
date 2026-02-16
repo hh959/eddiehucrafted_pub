@@ -3,12 +3,11 @@ title: "Day 1: My Hugo Blog Setup Journey"
 date: 2026-02-14
 slug: "day-1-hugo-blog-setup"
 draft: false
-description: "从零搭建 Hugo 博客并打通发布链路：仓库初始化、本地验证、发布脚本、Cloudflare Tunnel 与公网访问。"
-summary: "Day 1 完成了 Hugo 博客从 0 到可公网访问的全流程，包含仓库初始化、脚本化发布、K3s 首次部署与 Tunnel/DNS 打通。"
-cover: "/images/hugo-header.jpg"
 ---
 
 Today I completed the first full pass of building and publishing my personal blog with Hugo.
+
+![Day 1 setup snapshot](/images/hugo-logo-wide.svg)
 
 This post records the setup flow as a clean reference for future me.
 
