@@ -1,11 +1,16 @@
 ---
 title: "Case A：从 YouTube 链接到可发布文本（Agent / Skill / Protocol / Workflow）"
 date: 2026-02-15
+description: "用真实流水线拆解 Agent、Skill、Protocol 与 Workflow：从 YouTube 链接到 raw/cleaned/summary 可交付文本。"
+summary: "Case A 展示了一个可复现的转写与精修链路：字幕优先、ASR 回退、LLM 清洗与摘要，最终产出可发布文稿。"
+cover: "/images/k3s-logo.png"
 ---
 
 # Case A：从 YouTube 链接到可发布文本
 
 > 用一个真实流水线具像化 Agent / Skill / Protocol / Chain（OpenClaw + PiClaw）
+
+![Case A pipeline snapshot](/images/k3s-logo.png)
 
 ## TL;DR
 

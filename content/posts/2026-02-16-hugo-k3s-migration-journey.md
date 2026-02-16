@@ -5,6 +5,7 @@ draft: false
 tags: ["kubernetes", "k3s", "hugo", "infrastructure", "homelab"]
 categories: ["技术", "运维"]
 description: "如何将 Hugo 博客从本地服务器迁移到 K3s 集群，以及这样做的收益"
+summary: "一次从单机脚本到 K3s 声明式运维的迁移复盘：架构差异、关键决策、踩坑与收益。"
 ---
 
 ## 前言
@@ -12,6 +13,8 @@ description: "如何将 Hugo 博客从本地服务器迁移到 K3s 集群，以�
 两周前，我的博客还跑在一台 ARM 服务器（reComputer 2011）上，通过 systemd 服务直接管理。最近，我把它迁移到了自建的 K3s 集群。这不仅仅是一次"搬家"，更是一次架构思维的升级。
 
 这篇文章记录了迁移的全过程，以及为什么这样的改变值得做。
+
+<!--more-->
 
 ---
 
