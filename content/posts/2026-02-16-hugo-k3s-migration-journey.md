@@ -1,7 +1,7 @@
 ---
 title: "从单机到集群：Hugo 博客的 K3s 迁移之旅"
 date: 2026-02-16
-draft: true
+draft: false
 tags: ["kubernetes", "k3s", "hugo", "infrastructure", "homelab"]
 categories: ["技术", "运维"]
 description: "如何将 Hugo 博客从本地服务器迁移到 K3s 集群，以及这样做的收益"
