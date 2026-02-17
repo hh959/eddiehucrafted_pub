@@ -1,63 +1,96 @@
 {{ define "main" }}
 
-<div class="max-w-5xl mx-auto px-4 mt-8 space-y-8">
-  <section class="prose dark:prose-invert max-w-none">
-    <h1>Hi, I'm Eddie.</h1>
-    <p>
-      I write about building practical systems, learning by doing, and documenting projects that actually ship.
-      This site currently focuses on <strong>Tech</strong>, and is expanding into <strong>Photography</strong> and <strong>Woodwork</strong>.
-    </p>
+<div class="max-w-6xl mx-auto px-4 mt-10 space-y-12">
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <div class="space-y-4">
+      <p class="text-sm uppercase tracking-widest opacity-70">Hello, I'm Eddie</p>
+      <h1 class="text-4xl lg:text-5xl font-bold leading-tight">
+        Software Developer, Data Analyst, and Electronic Engineer.
+      </h1>
+      <p class="text-base opacity-80 max-w-2xl">
+        Focused on AI-assisted systems, intelligent control, and practical hardware-software integration.
+      </p>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a class="btn btn-primary" href="/posts/">Read Posts</a>
+        <a class="btn btn-outline" href="/categories/photography/">Photography</a>
+        <a class="btn btn-outline" href="/categories/woodwork/">Woodwork</a>
+      </div>
+    </div>
+
+    <div class="rounded-2xl p-6 bg-base-100 shadow-sm border border-base-300/40">
+      <h2 class="text-xl font-semibold mb-3">About</h2>
+      <p class="opacity-80">
+        I’ve spent over 20 years building and integrating software-hardware systems, with hands-on experience across delivery, operations, and data analysis.
+        Today, my main focus is AI-assisted system development—using AI to improve decision-making, automation, and real-world control workflows.
+        This site is where I document what I build, what works, and what I learn along the way.
+      </p>
+      <div class="mt-4 text-sm opacity-70">
+        Focus areas: AI-assisted systems · intelligent control · software-hardware integration
+      </div>
+    </div>
   </section>
 
   <section>
-    <h2 class="text-xl font-semibold mb-4">Explore by Theme</h2>
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-2xl font-semibold">Featured Themes</h2>
+    </div>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow" href="/categories/tech/">
+      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow border border-base-300/40" href="/categories/tech/">
         <div class="card-body">
           <h3 class="card-title">Tech</h3>
-          <p>Infrastructure, K3s operations, and build notes.</p>
+          <p>Real-world notes on AI-assisted system development, K3s operations, automation pipelines, and reproducible engineering workflows.</p>
         </div>
       </a>
 
-      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow" href="/categories/photography/">
+      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow border border-base-300/40" href="/categories/photography/">
         <div class="card-body">
           <h3 class="card-title">Photography</h3>
-          <p>Visual notes on light, places, and camera craft.</p>
+          <p>A visual journal of light, places, and coastal life.</p>
         </div>
       </a>
 
-      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow" href="/categories/woodwork/">
+      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow border border-base-300/40" href="/categories/woodwork/">
         <div class="card-body">
           <h3 class="card-title">Woodwork</h3>
-          <p>Small projects, tools, and workshop learning.</p>
+          <p>Small home build projects, tool notes, workshop experiments, and practical lessons from making things by hand.</p>
         </div>
       </a>
     </div>
   </section>
 
   <section>
-    <div class="flex items-center justify-between mb-3">
-      <h2 class="text-xl font-semibold">Latest in Tech</h2>
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-2xl font-semibold">Latest in Tech</h2>
       <a class="link link-hover text-sm" href="/categories/tech/">View all</a>
     </div>
 
-    <div class="space-y-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {{ $posts := where site.RegularPages "Type" "posts" }}
       {{ $count := 0 }}
       {{ range $posts }}
         {{ if and .Params.categories (in .Params.categories "Tech") }}
-          {{ if lt $count 8 }}
-            <article class="p-4 rounded-box bg-base-100 shadow-sm">
+          {{ if lt $count 6 }}
+            <article class="p-5 rounded-2xl bg-base-100 shadow-sm border border-base-300/40">
               <a href="{{ .RelPermalink }}" class="text-lg font-semibold hover:underline">{{ .Title }}</a>
               {{ with .Summary }}
-                <p class="mt-2 text-sm opacity-80">{{ . | plainify | truncate 160 }}</p>
+                <p class="mt-2 text-sm opacity-80">{{ . | plainify | truncate 150 }}</p>
               {{ end }}
-              <p class="mt-2 text-xs opacity-60">{{ .Date.Format "2006-01-02" }}</p>
+              <p class="mt-3 text-xs opacity-60">{{ .Date.Format "2006-01-02" }}</p>
             </article>
             {{ $count = add $count 1 }}
           {{ end }}
         {{ end }}
       {{ end }}
+    </div>
+  </section>
+
+  <section class="rounded-2xl p-6 bg-base-100 shadow-sm border border-base-300/40">
+    <h2 class="text-2xl font-semibold mb-3">Contact</h2>
+    <p class="opacity-80">I’m open to collaboration and practical projects in AI-assisted systems and automation.</p>
+    <div class="mt-3 space-y-1 text-sm">
+      <p>Email: <a class="link link-hover" href="mailto:eddiehucrafted@gmail.com">eddiehucrafted@gmail.com</a></p>
+      <p>Instagram: <a class="link link-hover" href="https://www.instagram.com/eddiehucaptured/" target="_blank" rel="noopener noreferrer">@eddiehucaptured</a></p>
     </div>
   </section>
 </div>
