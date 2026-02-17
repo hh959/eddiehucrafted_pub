@@ -1,6 +1,8 @@
 {{ define "main"}}
 
-{{ $paginator := .Paginate (where site.RegularPages "Type" "posts") }}
+{{ $techPosts := where site.RegularPages "Type" "posts" }}
+{{ $techPosts = where $techPosts "Params.categories" "intersect" (slice "Tech") }}
+{{ $paginator := .Paginate $techPosts }}
 
 {{ if site.Params.zenMode }}
 <div class="dream-zen-posts max-w-[65ch] mt-8 mx-auto px-4 space-y-8">
