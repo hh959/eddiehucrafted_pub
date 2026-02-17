@@ -1,6 +1,7 @@
 ---
 title: "Day 1: My Hugo Blog Setup Journey"
 date: 2026-02-14
+categories: ["Tech"]
 slug: "day-1-hugo-blog-setup"
 draft: false
 description: "从零搭建 Hugo 博客并打通发布链路：仓库初始化、本地验证、发布脚本、Cloudflare Tunnel 与公网访问。"

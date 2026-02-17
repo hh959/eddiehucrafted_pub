@@ -36,3 +36,9 @@ menu:
     - name: "Posts"
       url: "/posts/"
       weight: 10
+    - name: "Photography"
+      url: "/categories/photography/"
+      weight: 20
+    - name: "Woodwork"
+      url: "/categories/woodwork/"
+      weight: 30

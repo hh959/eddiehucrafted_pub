@@ -3,7 +3,7 @@ title: "Day 4: 低资源 K3s 监控实战：日志与指标上送 Grafana Cloud"
 date: 2026-02-17
 draft: false
 tags: ["k3s", "kubernetes", "grafana", "loki", "prometheus", "monitoring", "homelab"]
-categories: ["技术", "运维"]
+categories: ["Tech"]
 description: "用最小组件把 K3s 的关键日志与核心指标接入 Grafana Cloud，兼顾可观测性与资源控制。"
 summary: "这篇记录 Day 4 的监控改造：为什么选 Grafana Cloud、如何连接日志与指标、看板查询与当前方案局限。"
 cover: "/images/day4-cover-k8s-grafana-loki-prometheus.jpg"

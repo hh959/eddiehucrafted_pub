@@ -4,7 +4,7 @@ date: 2026-02-15
 slug: "from-initcontainer-to-stable-git-pull-build"
 draft: false
 tags: ["hugo", "k3s", "ops", "automation"]
-categories: ["engineering-notes"]
+categories: ["Tech"]
 description: "How I moved my blog delivery from fragile runtime init builds to a stable pull-build-serve model."
 cover: "/images/hugo-cms.jpg"
 ---
