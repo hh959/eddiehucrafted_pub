@@ -12,7 +12,7 @@ params:
   lightTheme: "emerald"
   darkTheme: "forest"
 
-  author: "Eddie"
+  author: "Eddie Hu"
   description: "Notes on learning, building, and projects."
   avatar: "/images/favicon.png"
   favicon: "favicon.png"
