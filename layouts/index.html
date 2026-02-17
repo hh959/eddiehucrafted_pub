@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+<div class="max-w-5xl mx-auto px-4 mt-8 space-y-8">
+  <section class="prose dark:prose-invert max-w-none">
+    <h1>Hi, I'm Eddie.</h1>
+    <p>
+      I write about building practical systems, learning by doing, and documenting projects that actually ship.
+      This site currently focuses on <strong>Tech</strong>, and is expanding into <strong>Photography</strong> and <strong>Woodwork</strong>.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="text-xl font-semibold mb-4">Explore by Theme</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow" href="/categories/tech/">
+        <div class="card-body">
+          <h3 class="card-title">Tech</h3>
+          <p>Infrastructure, K3s operations, and build notes.</p>
+        </div>
+      </a>
+
+      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow" href="/categories/photography/">
+        <div class="card-body">
+          <h3 class="card-title">Photography</h3>
+          <p>Visual notes on light, places, and camera craft.</p>
+        </div>
+      </a>
+
+      <a class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow" href="/categories/woodwork/">
+        <div class="card-body">
+          <h3 class="card-title">Woodwork</h3>
+          <p>Small projects, tools, and workshop learning.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="flex items-center justify-between mb-3">
+      <h2 class="text-xl font-semibold">Latest in Tech</h2>
+      <a class="link link-hover text-sm" href="/categories/tech/">View all</a>
+    </div>
+
+    <div class="space-y-4">
+      {{ $posts := where site.RegularPages "Type" "posts" }}
+      {{ $count := 0 }}
+      {{ range $posts }}
+        {{ if and .Params.categories (in .Params.categories "Tech") }}
+          {{ if lt $count 8 }}
+            <article class="p-4 rounded-box bg-base-100 shadow-sm">
+              <a href="{{ .RelPermalink }}" class="text-lg font-semibold hover:underline">{{ .Title }}</a>
+              {{ with .Summary }}
+                <p class="mt-2 text-sm opacity-80">{{ . | plainify | truncate 160 }}</p>
+              {{ end }}
+              <p class="mt-2 text-xs opacity-60">{{ .Date.Format "2006-01-02" }}</p>
+            </article>
+            {{ $count = add $count 1 }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+</div>
+
+{{ end }}
