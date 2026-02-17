@@ -1,5 +1,5 @@
 ---
-title: "从单机到集群：Hugo 博客的 K3s 迁移之旅"
+title: "Day 3: 从单机到集群：Hugo 博客的 K3s 迁移之旅"
 date: 2026-02-16
 draft: false
 tags: ["kubernetes", "k3s", "hugo", "infrastructure", "homelab"]
