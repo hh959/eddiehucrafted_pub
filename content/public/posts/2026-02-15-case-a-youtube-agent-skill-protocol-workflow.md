@@ -7,11 +7,7 @@ summary: "Case A 展示了一个可复现的转写与精修链路：字幕优先
 cover: "/images/k3s-logo.png"
 ---
 
-# Case A：从 YouTube 链接到可发布文本
-
 > 用一个真实流水线具像化 Agent / Skill / Protocol / Chain（OpenClaw + PiClaw）
-
-![Case A pipeline snapshot](/images/k3s-logo.png)
 
 ## TL;DR
 
