@@ -27,6 +27,8 @@ params:
   imageZoomableInPost: true
   showPrevNextPost: true
 
+  reorderShares: ["whatsapp", "facebook"]
+
   advanced:
     customCSS:
       - "css/dream-tidy-cards.css"
