@@ -4,6 +4,8 @@ date: 2026-02-17
 draft: false
 ---
 
+![Eddie portrait](/images/avatar-eddie.jpg)
+
 Hi, I’m Eddie.
 
 I’m a **Software Developer, Data Analyst, and Electronic Engineer**, with over 20 years of experience building and integrating software-hardware systems.
