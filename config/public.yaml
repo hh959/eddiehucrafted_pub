@@ -14,7 +14,7 @@ params:
 
   author: "Eddie"
   description: "Notes on learning, building, and projects."
-  avatar: "/images/avatar-eddie.jpg"
+  avatar: "/images/favicon.png"
   favicon: "favicon.png"
   headerTitle: "Eddie Hu Crafted"
   motto: "Learning, building, and sharing."
@@ -33,6 +33,9 @@ params:
 
 menu:
   main:
+    - name: "About"
+      url: "/about/"
+      weight: 5
     - name: "Posts"
       url: "/posts/"
       weight: 10
