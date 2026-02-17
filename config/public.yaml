@@ -31,17 +31,17 @@ params:
     customCSS:
       - "css/dream-tidy-cards.css"
 
-menu:
-  main:
-    - name: "About"
-      url: "/about/"
-      weight: 5
-    - name: "Posts"
-      url: "/posts/"
-      weight: 10
-    - name: "Photography"
-      url: "/categories/photography/"
-      weight: 20
-    - name: "Woodwork"
-      url: "/categories/woodwork/"
-      weight: 30
+  reorderNavItems: ["about-page", "posts-page", "photography-page", "woodwork-page"]
+  navItems:
+    about-page:
+      title: "About"
+      href: "/about/"
+    posts-page:
+      title: "Posts"
+      href: "/posts/"
+    photography-page:
+      title: "Photography"
+      href: "/categories/photography/"
+    woodwork-page:
+      title: "Woodwork"
+      href: "/categories/woodwork/"
