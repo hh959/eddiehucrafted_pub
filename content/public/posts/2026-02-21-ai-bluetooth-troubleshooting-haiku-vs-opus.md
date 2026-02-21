@@ -6,7 +6,7 @@ tags: ["bluetooth", "troubleshooting", "ai", "haiku", "opus"]
 categories: ["Tech"]
 description: "用 Haiku 和 Opus 两个 AI 模型排查 Quark 边缘节点蓝牙连接问题，对比它们在故障诊断中的优劣。"
 summary: "用两个不同的 AI 模型排查蓝牙连接问题，对比 Haiku 的快速行动式排查和 Opus 的深层依赖链分析。"
-cover: "/images/ai-bluetooth-troubleshooting.jpg"
+cover: "/images/2026-02-21-ai-bluetooth-troubleshooting-cover.png"
 ---
 
 用两个不同的 AI 模型排查蓝牙连接问题，对比 Haiku 的快速行动式排查和 Opus 的深层依赖链分析。
